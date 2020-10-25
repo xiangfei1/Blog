@@ -22,12 +22,12 @@
 <meta property="og:image" content="http://www.tanglvewu.top/image/vuedialog%E9%97%AE%E9%A2%984.png">
 <meta property="og:image" content="http://www.tanglvewu.top/image/vuedialog%E9%97%AE%E9%A2%985.png">
 <meta property="og:image" content="http://www.tanglvewu.top/image/vuedialog%E9%97%AE%E9%A2%986.png">
-<meta property="og:image" content="file:///C:%5CUsers%5CFlying%5CAppData%5CLocal%5CTemp%5CSGPicFaceTpBq%5C12024%5C05457657.png">
+<meta property="og:image" content="http://www.tanglvewu.top/image/0636B4A4.png">
 <meta property="og:image" content="http://www.tanglvewu.top/image/vuedialog%E9%97%AE%E9%A2%987.png">
 <meta property="og:image" content="http://www.tanglvewu.top/image/vuedialog%E9%97%AE%E9%A2%988.png">
 <meta property="og:image" content="http://www.tanglvewu.top/image/vuedialog%E9%97%AE%E9%A2%989.png">
 <meta property="og:image" content="http://www.tanglvewu.top/image/vuedialog%E9%97%AE%E9%A2%9810.png">
-<meta property="og:updated_time" content="2020-10-25T07:50:19.806Z">
+<meta property="og:updated_time" content="2020-10-25T07:53:16.221Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="子组件和父组件之间对话框的那点事">
 <meta name="twitter:description" content="子组件和父组件之间使用对话框的那点事​    我们在使用elementui框架编写项目的时候，有可能会使用到对话框组件来进行数值的新增和修改，但是如果一个vue页面使用了多个对话框，就需要多次导入el-dialog组件，这样会让整个vue页面的代码看上去冗余、复杂。 ​    为了能够很好的解决这一问题，最好的方法就是将引入的对话框组件抽离为一个单独的vue组件，而在这抽离的过程中就会涉及到父子组">
@@ -231,7 +231,7 @@
 <p><img src="../image/vuedialog%E9%97%AE%E9%A2%986.png" alt="vuedialog问题6.png"></p>
 <p>​    于是我给el-dialog组件新增了@close 方法，再次尝试了下上面那三种关闭弹框的方式，发现一样报错。。。。</p>
 <p>​    仔细想了下，键盘上的esc键可能是绑定了keypress或者是keydown方法，点击旁边的空白处关闭可能是绑定了失去焦点的方法，如果要修复，需要找到对应的方法然后更改，可这是elementui框架中默认的方法，改的话会很麻烦，，，</p>
-<p>​    最后问了下度娘<img src="file:///C:%5CUsers%5CFlying%5CAppData%5CLocal%5CTemp%5CSGPicFaceTpBq%5C12024%5C05457657.png" alt="img">，原来可以将传递的判断值改成对象，这样就不会产生报错了，因为对象是引用类型，子组件直接修改对象中的属性，不会更改对象相对应的地址。</p>
+<p>​    最后问了下度娘<img src="../image/0636B4A4.png" alt="img">，原来可以将传递的判断值改成对象，这样就不会产生报错了，因为对象是引用类型，子组件直接修改对象中的属性，不会更改对象相对应的地址。</p>
 <p>父组件：</p>
 <p><img src="../image/vuedialog%E9%97%AE%E9%A2%987.png" alt="vuedialog问题7.png"></p>
 <p><img src="../image/vuedialog%E9%97%AE%E9%A2%988.png" alt="vuedialog问题8.png"></p>
